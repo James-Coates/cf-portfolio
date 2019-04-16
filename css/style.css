@@ -167,6 +167,12 @@ a.nav-main__link--active {
     text-align: center;
 }
 
+.svg-container {
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 /* Buttons and Link Buttons */
 
 .btn,

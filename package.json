@@ -1,0 +1,25 @@
+{
+  "name": "cf-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio created on the Career Foundry course to showcase web development work.",
+  "main": "app.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-Coates/james-coates.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "James Coates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/James-Coates/james-coates.github.io/issues"
+  },
+  "homepage": "https://github.com/James-Coates/james-coates.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

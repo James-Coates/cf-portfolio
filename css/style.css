@@ -204,34 +204,45 @@ a.nav-main__link--active {
 .btn,
 .btn:link,
 .btn:visited {
-    font-family: var(--font-heading);
-    font-weight: var(--font-weight-heading);
+    font-family: var(--font-normal);
+    font-weight: var(--font-weight-normal);
     font-size: 1.4rem;
     display: inline-block;
     padding: 1.5rem 3rem;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    transition: all .4s;
     color: var(--light-gray);
-    border-radius: 10rem;
-    border: none;
-    text-transform: uppercase;
-    transition: opacity .2s;
 }
 
 .btn:active {
     outline: none;
 }
 
-.btn:hover,
-.btn:focus {
-    opacity: .8;
-}
-
-.btn__primary {
+.btn__primary:link, 
+.btn__primary:visited {
     background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
-.btn__secondary {
+.btn__primary:hover, 
+.btn__primary:focus {
+    background-color: var(--light-gray);
+    color: var(--primary-color);
+} 
+
+.btn__secondary:link,
+.btn__secondary:visited {
     background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
+
+.btn__secondary:hover, 
+.btn__secondary:focus {
+    background-color: var(--light-gray);
+    color: var(--secondary-color);
+} 
 
 .footer__img:hover {
     opacity: .8;

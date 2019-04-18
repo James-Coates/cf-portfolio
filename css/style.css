@@ -366,6 +366,10 @@ a.nav-main__link--active {
         font-size: 2rem;
     }
 
+    .page-footer {
+        position: relative;
+    }
+
 }
 
 @media all and (max-width: 500px) {

@@ -504,6 +504,7 @@ button {
     .landing-content {
         max-width: 50rem;
     }
+}
 
 @media all and (max-width: 700px) {
 

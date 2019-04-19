@@ -496,6 +496,16 @@ button {
     width: 100%;
 }
 
+@media all and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+
+    .landing-content {
+        max-width: 50rem;
+    }
+    
+
 @media all and (max-width: 700px) {
 
     .page-header {
@@ -534,7 +544,7 @@ button {
     }
 
     .landing__img {
-        max-width: 15rem;
+        max-width: 30rem;
     }
 
     .page-header__item {

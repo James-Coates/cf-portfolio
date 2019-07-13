@@ -1,83 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>James Coates - Portfolio</title>
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:300,400,700" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/production.style.css">
-    <script src="js/tota11y.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>James Coates - Developer</title>
   </head>
-
   <body>
-
-    <div class="fill">
-
-      <header class="page-header">
-      
-        <div class="page-header__item">
-          <a href="index.html" class="page-header__logo">James Coates</a>
-        </div>
-      
-        <nav class="nav-main page-header__item">
-          <ul role="menubar" class="nav-main__menu">
-            <li class="nav-main__item">
-              <a class="nav-main__link nav-main__link--active" href="index.html">Home</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="work.html">Projects</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="about.html" aria-label="About Me">About</a>
-            </li>
-            <li class="nav-main__item">
-              <a class="nav-main__link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-      </header>
-
-      <main>
-
-        <section class="landing middle">
-          
-          <div class="landing-content">
-            
-            <h1 class="landing__heading--primary">
-                <span class="color-primary">Hello,</span> I'm James!
-              <br>
-              I'm a Full Stack Developer
-            </h1>
-            <p class="landing__p">Currently based in Notttingham, open to new opportunities</p>
-            <a href="work.html" class="btn btn__primary">Explore Projects</a>
-  
-          </div> 
-
-          <div class="landing-img-container">
-              <img src="img/me1.jpg" class="landing__img" alt="A photo of Me at my Desk">
-          </div>
-          
-        </section>
-    
-        </main>
-
-        <footer class="page-footer">
-          <p>Find me on</p>
-          <div class="container">
-            <a href="https://github.com/James-Coates" class="footer__img" target="_blank"><img src="img/github.svg" alt="Github"></a>
-            <a href="https://twitter.com/_JCoates_" class="footer__img" target="_blank"><img class="footer__img" src="img/twitter.svg" alt="Twitter"></a>
-            <a href="https://www.linkedin.com/in/jcoates92/" class="footer__img" target="_blank"><img class="footer__img" src="img/linkedin.svg" alt="LinkedIn"></a>
-          </div>
-    
-        </footer>
-
+    <!-- Nav Bar -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="#">James Coates</a>
       </div>
 
+      <!-- Toggle Menu -->
+      <div class="menu-wrap">
+        <!-- Toggler -->
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger"><div></div></div>
+        <!-- Expanded Menu -->
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+                <li class="menu-item"><a class="menu-link" href="#work">Projects</a></li>
+                <li class="menu-item"><a class="menu-link" href="#about">About</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <div class="header">
+      <div class="header__content">
+        <h1 class="header__display upper">I <span class="highlight">Build</span> Things</h1>
+        <p class="header__lead">Hi! I'm James, a Full Stack Web Developer</p>
+        <a href="#work" class="btn">View My Work</a>
+      </div>
+    </div>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-description">
+        <div class="about-description__container">
+          <h2 class="about-description__header">
+            <span class="block">About</span><span class="block highlight">Me</span>
+          </h2>
+          <p class="about-description__text">
+            Hi! I'm James, a full stack web developer currently based in Nottingham in the UK. I love to tinker, design
+            and build things. It's something I was born with. I have an engineering background, currently transitioning
+            into the world of web development. It's the best decision I'v ever made.
+            <span class="block"></span>
+            I'm always interested in new opportunities, be it big or small. Feel free to have a look around my work or
+            if you want a quick chat I'm just a click away.
+          </p>
+        </div>
+      </div>
+      <div class="about-display">
+        <div class="about-display__container">
+          <img class="about-display__img" src="./assets/phone3.png" alt="" />
+          <a href="" class="about-display__btn btn">Let's Chat</a>
+        </div>
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="container">
+        <h2 class="work__header">Featured Work</h2>
+        <div class="work__container">
+          <div class="work__project" id="the-flix-db">
+            <div>
+              <h3 class="project__title">TheFLIXdb</h3>
+              <p class="project__description">
+                A movie database app built on the React framework providing users with information on select movies.
+              </p>
+              <div class="project__logo-box">
+                <img class="project__logo" src="./assets/react-icon.svg" alt="" />
+                <img class="project__logo" src="./assets/nodejs.svg" alt="" />
+                <img class="project__logo" src="./assets/mongodb.png" alt="" />
+              </div>
+              <a href="https://theflixdb.herokuapp.com/" target="blank" class="btn project__btn">Visit Site</a>
+            </div>
+          </div>
+          <div class="work__project" id="btc-quiz">
+            <div>
+              <h3 class="project__title">The Bitcoin Quiz App</h3>
+              <p class="project__description">
+                A quiz app testing users on their knowledge of Bitcoin. Built using the Angular framework.
+              </p>
+              <div class="project__logo-box">
+                <img class="project__logo" src="./assets/angularjs-icon.svg" alt="" />
+              </div>
+              <a href="https://bitcoin-quiz-app.herokuapp.com/" class="btn project__btn">Learn More</a>
+            </div>
+          </div>
+          <div class="work__project" id="to-do-app">
+            <div>
+              <h3 class="project__title">Todo App</h3>
+              <p class="project__description">
+                A simple todo app built using the Vue framework.
+              </p>
+              <div class="project__logo-box">
+                <img class="project__logo" src="./assets/vuejs.svg" alt="" />
+              </div>
+              <a href="https://to-do-vue.herokuapp.com/" target="blank" class="btn project__btn">Visit Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <a href="https://github.com/James-Coates" target="blank"><img src="./assets/gh.png" alt=""/></a>
+    </footer>
+    <script src="./js/scripts.js"></script>
   </body>
-
 </html>

@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="/css/style.css" />
     <title>James Coates - Developer</title>
   </head>
   <body>
-    <div class="container-fluid fill-screen light-theme">
+    <div class="container-fluid light-theme">
       <!-- Nav Bar -->
       <nav class="nav container-nav fixed">
         <div class="nav__container">
@@ -42,20 +42,29 @@
           </div>
         </div>
       </nav>
-      <!-- Landing -->
-      <div class="landing">
-        <div class="landing__container">
-          <div class="landing__display">
-            I Build Things
-          </div>
-          <div class="landing__lead">
-            Hey I’m James, a Full Stack Web Developer.
-          </div>
-          <a class="btn landing__btn" href="/portfolio.html">View my Work</a>
-        </div>
+      <div class="container-m">
+        <header class="header">
+          <h2 class="header__title">Get in touch (WIP)</h2>
+        </header>
       </div>
+      <main>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Hi, James..."></textarea>
+        </form>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__tm">© 2019 James Coates</div>
+          <div class="footer__logo">JC</div>
+          <div class="footer__social">
+            <a href="https://github.com/James-Coates" target="blank"><img src="/assets/github.svg" alt=""/></a>
+            <a href="https://twitter.com/_jcoates_" target="blank"><img src="/assets/twitter.svg" alt=""/></a>
+          </div>
+        </div>
+      </footer>
     </div>
-
     <script src="/js/scripts.js"></script>
   </body>
 </html>

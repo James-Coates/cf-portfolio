@@ -17,8 +17,8 @@
     // construct a new http request
     var xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action, true);
-    // xhr.setRequestHeader('Accepts', 'application/json; charset=utf-8');
-    // xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    xhr.setRequestHeader('Accepts', 'application/json; charset=utf-8');
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
     // Send the collected data as JSON
     xhr.send(JSON.stringify(data));

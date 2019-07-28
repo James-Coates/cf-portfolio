@@ -48,10 +48,12 @@
         </header>
       </div>
       <main>
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
+        <form class="contact-form" action="https://mjxz0fdn8i.execute-api.us-east-1.amazonaws.com/dev/portfolio-mailer" method="POST">
+          <form class="contact-form" action="" method="POST">
+          <input name="name" type="text" placeholder="Name" />
+          <input name="email" type="email" placeholder="Email" />
           <textarea name="message" id="" cols="30" rows="10" placeholder="Hi, James..."></textarea>
+          <button type="submit">Send Message</button>
         </form>
       </main>
       <footer class="footer">
@@ -66,5 +68,6 @@
       </footer>
     </div>
     <script src="/js/scripts.js"></script>
+    <script src="/js/email-form-handler.js"></script>
   </body>
 </html>

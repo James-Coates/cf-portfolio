@@ -1,0 +1,11 @@
+# mod_rewrite starts here
+RewriteEgnine on
+
+# Do not apply to existing directories
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Check for file in directory with .html ext
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+# Rewrite url [ignore case, conditions before only applied to this rule]
+ReWriteRule ^(.*)$ $1.html [NC,L]

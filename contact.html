@@ -49,10 +49,21 @@
       </div>
       <main>
         <form class="contact-form" action="https://mjxz0fdn8i.execute-api.us-east-1.amazonaws.com/dev/portfolio-mailer" method="POST">
-          <form class="contact-form" action="" method="POST">
-          <input name="name" type="text" placeholder="Name" />
-          <input name="email" type="email" placeholder="Email" />
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Hi, James..."></textarea>
+          <input type="hidden" name="ses_address" value="james.coates@me.com" />
+          <input type="hidden" name="send_to" value="James Coates <james.coates@me.com>" />
+          <input type="hidden" name="subject" value="Email from Client" />
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="reply_to" required>
+          </label>
+          <label>
+            Message:
+            <textarea name="message" required></textarea>
+          </label>
           <button type="submit">Send Message</button>
         </form>
       </main>

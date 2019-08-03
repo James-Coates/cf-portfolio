@@ -9,3 +9,5 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # Rewrite url [ignore case, conditions before only applied to this rule]
 ReWriteRule ^(.*)$ $1.html [NC,L]
+
+#

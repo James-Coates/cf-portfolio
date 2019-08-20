@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.btn {
+  border: 1px solid $color-gray-l;
+  padding: 2rem 6rem;
+  display: inline-block;
+  color: $color-text;
+  transition: all 0.3s ease;
+  font-family: $font-head;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 2rem 1rem 2rem;
+  text-align: center;
+
+
+  &:hover {
+    background-color: lighten($color-dark, 72%);
+  }
+
+  &__primary {
+    
+  }
+
+  &__secondary {
+    border: 1px solid $color-highlight;
+    &:hover{
+      background-color: lighten($color-highlight, 35%);
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+input {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  margin: 2rem 0;
+  color: $color-text;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: $color-off-white;
+}
+
+textarea {
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: $color-text;
+  border-radius: 5px;
+  margin: 2rem 0;
+  outline: none;
+  border: none;
+  height: 20rem;
+  background-color: $color-off-white;
+}
+
+form .btn {
+  align-self: flex-end;
+}

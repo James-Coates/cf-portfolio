@@ -1,0 +1,45 @@
+@import './styles/variables.scss';
+
+.image {
+  border-radius: 50rem;
+  width: 80%;
+  max-width: 40rem; 
+}
+
+.description {
+  &__container {
+    margin: 0 auto;
+    max-width: 80rem;
+    width: 90%;
+    padding-bottom: 5rem;
+  }
+  &__header {
+    font-family: $font-head;
+    color: $color-main;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+  &__text {
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+  }
+}
+
+.btn {
+  &__container {
+    margin: 0 auto;
+    max-width: 80rem;
+    width: 90%;
+    padding-bottom: 15rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: $view-md) {
+  .btn {
+    &__container {
+      flex-direction: column;
+    }
+  }
+}

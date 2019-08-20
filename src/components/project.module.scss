@@ -1,0 +1,24 @@
+@import './styles/variables.scss';
+
+.banner {
+  &__container {
+    width: 80%;
+    margin: auto;
+    transform: translateY(-5rem);
+    padding-bottom: 10rem;
+    max-width: 100rem;
+  }
+  &__img {
+    margin: auto;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.webStack {
+  padding: 5rem;
+  & img {
+    height: 5rem;
+    margin: 0 2rem;
+  }
+}

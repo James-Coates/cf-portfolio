@@ -1,0 +1,20 @@
+@import './styles/variables.scss';
+
+.workList {
+  padding-top: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+    grid-auto-rows: minmax(400px, auto);
+    margin-bottom: 5rem;
+  }
+
+@media all and (max-width: $view-md) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

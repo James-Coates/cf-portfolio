@@ -1,0 +1,78 @@
+@import './styles/variables.scss';
+
+.landing {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.display {
+  font-family: $font-main;
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $color-main;
+  letter-spacing: 10px;
+  // line-height: 7rem;
+  padding: 2rem 0;
+  animation: fadeDown 1.2s ease-in-out;
+  margin-bottom: 1rem;
+
+  & span {
+    font-weight: 400;
+  }
+
+  @keyframes fadeDown {
+    0% {
+      transform: translateY(-400px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.lead {
+  padding-bottom: 4rem;
+}
+
+.btn {
+
+  animation: fadeIn 1.2s ease-in-out;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.btn__container {
+  padding-top: 2rem;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 600px) {
+
+  .display {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+  .lead {
+    padding-bottom: 3rem;
+  }
+  .btn__container {
+    flex-direction: column;
+  }
+}

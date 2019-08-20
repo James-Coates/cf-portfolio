@@ -1,0 +1,39 @@
+@import './styles/variables.scss';
+
+.footer {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+
+.logo {
+  font-family: $font-head;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.social {
+  display: flex;
+  width: 12.5rem;
+  justify-content: flex-end;
+
+  & img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1.5rem;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.tm {
+  font-size: 1.4rem;
+  font-family: $font-head;
+  font-weight: 300;
+  width: 12.5rem;
+}

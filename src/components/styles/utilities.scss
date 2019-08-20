@@ -1,0 +1,112 @@
+@import './variables.scss';
+
+// Padding
+.p-t-l {
+  padding-top: 10rem;
+}
+
+.p-b-l {
+  padding-bottom: 15rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-gray {
+  background-color: $color-off-white;
+}
+
+.flex-fill {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 1.5;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 50%;
+} 
+
+.transform-u-50 {
+  transform: translateY(-50%);
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.next-line {
+    display: block;
+    height: 1.6rem;
+}
+
+// About page
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-25%);
+
+}
+
+.about-description {
+  line-height: 3rem;
+  flex: 1 0 50%;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  & div {
+    margin: auto;
+    max-width: 40rem;
+    margin: 5rem 0;
+  }
+}
+
+.about-image {
+  flex: 1 0 50%;
+  justify-content: center;
+
+  & div {
+    background: url('../images/james.jpg');
+    height: 40rem;
+    width: 40rem;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    margin: 5rem 0;
+  }
+
+}
+
+@media all and (max-width: $view-md) {
+  .about-container {
+    flex-direction: column;
+    transform: translateY(0);
+    flex-direction: column-reverse;
+  }
+
+  .about-image {
+    flex: none;
+    & div {
+      height: 35rem;
+      width: 35rem;
+    }
+  }
+  .about-description div {
+    text-align: center;
+    & div {
+      height: 35rem;
+      width: 35rem;
+    }
+  }
+}
+
